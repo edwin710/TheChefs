@@ -5,3 +5,52 @@
 body{
     background-color: bisque;
 }
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.tags{
+    overflow: hidden;
+    background-color: orange;
+}
+
+.tags a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 125px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tags a:hover{
+    background-color: white;
+    color: orange;
+}
+
+/*Grocery List Classes*/
+.grocer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grocer ul{
+    font-size: 20px;
+    border-style: solid;
+}
+
+.grocer li{
+    text-indent: 50px;
+}
+
+.grocer p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grocer button{
+    text-align: center;
+}
