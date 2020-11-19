@@ -31,6 +31,58 @@ h1{
     color: orange;
 }
 
+/*Planner Classes*/
+
+.plan {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.plan table{
+    width: 100%;
+    border: 1px orange;
+    background-color: #ECCE77;
+}
+
+.plan tr{
+    vertical-align: text-top;
+    font-size: 20px;
+    border-style: solid;
+}
+
+.plan td{
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.plan p{
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 10px;
+    text-align: center;
+}
+
+.plan button{
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    background-color: #ECCE77;
+}
+
+.plan img{
+    align: center;
+    width: 50%;
+    height: 50%:
+}
+
+.button1{
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    background-color: #ECCE77;
+    width: 100%;
+    height: 70%;
+}
+
 /*Grocery List Classes*/
 .grocer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
