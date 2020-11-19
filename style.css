@@ -311,7 +311,7 @@ a {
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 125px;
+    padding: 14px 15px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -320,4 +320,5 @@ a {
     background-color: white;
     color: orange;
 }
+
 
