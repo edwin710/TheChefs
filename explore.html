@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explore</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/101522b002.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class = "container">
+
+        <div class="tags">
+            <a href = "planner.html">Meal Planner</a>
+            <a href = "explore.html">Explore</a>
+            <a href = "favorites.html">Favorites</a>
+            <a href="grocery_list.html">Grocery List</a>
+        </div>
+          
+         <h1 class = "suggest">BASED ON ITEMS IN YOUR CART</h1> 
+
+        <div class = "card1">
+            <img class ="foodPic" src="Vegetables_PNGs/Pumpkim.png" alt="Pumpkin Pie">
+            <div>
+                <h1 class = "recipeTitle">Grandma's Pumpkin Pie</h1>
+                <p class = "recipeDesc">Total Time: 30 minutes.</p>
+            </div>
+            <form action = "exPumpkinView.html" >
+                <button id = "view">View</button>
+            </form>
+            <button id = "add">Add to Favorites</button>
+        </div>
+        <div class = "card2">
+            <img class ="foodPic" src="Vegetables_PNGs/Broc.png" alt="Broccoli">
+            <div>
+                <h1 class = "recipeTitle">Broccoli Cheddar Soup</h1>
+                <p class = "recipeDesc">Total Time: 45 minutes.</p>
+            </div>
+            <form action = "brocView.html" >
+                <button id = "view">View</button>
+            </form>
+            <form action = "explore2.html">
+                <button id = "add">Add to Favorites</button>
+            </form>
+        </div>
+
+        <h1 class = "suggest">HEALTHY</h1> 
+
+        <div class = "card3">
+            <img class ="foodPic" src="Vegetables_PNGs/SP.png" alt="SweetPotato">
+            <div>
+                <h1 class = "recipeTitle">Sweet Potato Chili</h1>
+                <p class = "recipeDesc">Total Time: 105 minutes.</p>
+            </div>
+            <form action = "spView.html" >
+                <button id = "view">View</button>
+            </form>
+            <button id = "add">Add to Favorites</button>
+        </div>
+
+        <h1 class = "suggest">YOU MIGHT LIKE</h1> 
+
+        <div class = "card4">
+            <img class ="foodPic" src="Vegetables_PNGs/Carrot.png" alt="SweetPotato">
+            <div>
+                <h1 class = "recipeTitle">Shirley's Carrot Cake</h1>
+                <p class = "recipeDesc">Total Time: 75 minutes.</p>
+            </div>
+            <form action = "exCarrotView.html" >
+                <button id = "view">View</button>
+            </form>
+            <button id = "add">Add to Favorites</button>
+        </div>
+    </div>
+
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display += " none";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script> 
+</body>
+</html>
