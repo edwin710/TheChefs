@@ -58,6 +58,19 @@ a {
 
 }
 
+.card1View {
+    width: 320px;
+    height: 300px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -8em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .card2 {
     width: 320px;
     height: 100px;
@@ -185,6 +198,16 @@ a {
     margin-top: -.5em;
 }
 
+.filler {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    float: right;
+    text-align: left;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
 .foodPic {
     width: 7em;
     height: 7em;
@@ -242,8 +265,8 @@ a {
 #addPlan {
     position: absolute;
     width: 6.5em;
-    bottom: 7%;
-    right: 35%;
+    bottom: 5%;
+    left: 15%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -297,3 +320,4 @@ a {
     background-color: white;
     color: orange;
 }
+
