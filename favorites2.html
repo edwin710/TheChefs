@@ -2,57 +2,55 @@
 <html>
 <head>
 <title>Favorites2</title>
-<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="myStyle.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <!-- ADD NEW CARD-->
 
 <body>
+    <div class="tags">
+        <a href = "planner.html">Meal Planner</a>
+        <a href = "explore.html">Explore</a>
+        <a href = "favorites.html">Favorites</a>
+        <a href = "grocery_list.html">Grocery List</a>
+        <a>Preferences</a>
+    </div>
     <div class = "container">
         <div>
             <h1 class = "containerTitle">My Favorites</h1>
         </div>
         
-        <div class = "card12">
+        <div class = "card1">
             <img class ="foodPic" src="Vegetables_PNGs/Pumpkim.png" alt="Pumpkin Pie">
             <div>
                 <h1 class = "recipeTitle">Grandma's Pumpkin Pie</h1>
                 <p class = "recipeDesc">Total Time: 30 minutes.</p>
             </div>
-            <button id = "view">View</button>
-            <form action = "plannerWithMeal.html">
-                <button id = "addPlan">Add to Plan</button>
+            <form action = "pumpkinView.html" >
+                <button id = "view">View</button>
             </form>
         </div>
-        <div class = "card22">
-            <img class = "foodPic" src="Vegetables_PNGs/SP.png" alt="SweetPotato">
+        <div class = "card2">
+            <img class = "foodPic" src="Vegetables_PNGs/Carrot.png" alt="SweetPotato">
             <div>
                 <h1 class = "recipeTitle">Shirley's Carrot Cake</h1>
                 <p class = "recipeDesc">Total Time: 75 minutes.</p>
             </div>
-            <form action = "explore.html" >
+            <form action = "carrotView.html" >
                 <button id = "view">View</button>
             </form>
-            <button id = "addPlan">Add to Plan</button>
         </div>
-        <div class = "card32">
-            <img class = "foodPic" src="Vegetables_PNGs/Broc.png" alt="Broccoli">
+        <div class = "card3">
+            <img class = "foodPic" src="Vegetables_PNGs/Carrot.png" alt="SweetPotato">
             <div>
-                <h1 class = "recipeTitle">Broccoli Cheddar Soup</h1>
-                <p class = "recipeDesc">Total Time: 45 minutes.</p>
+                <h1 class = "recipeTitle">Shirley's Carrot Cake</h1>
+                <p class = "recipeDesc">Total Time: 75 minutes.</p>
             </div>
-            <form action = "explore.html" >
+            <form action = "carrotView.html" >
                 <button id = "view">View</button>
             </form>
-            <button id = "addPlan">Add to Plan</button>
         </div>
-        <form action = "addNew.html">
         <button id = "new">Add New</button>
-        </form>
-
-        <form action = "explore.html" >
-            <button id = "goBack">Go back</button>
-        </form>
     </div>
 </body>
