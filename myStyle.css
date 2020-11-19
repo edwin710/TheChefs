@@ -112,6 +112,7 @@ h1{
     border-radius: 50%;
     color: white;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .addNewGrocer button:hover {
@@ -128,6 +129,7 @@ h1{
     color: white;
     border: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #textBox{
@@ -141,4 +143,5 @@ h1{
     color: white;
     border: none;
     font-size: 20px;
+    cursor: pointer;
 }
