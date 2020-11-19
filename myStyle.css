@@ -232,6 +232,16 @@ h1{
     margin-top: -10em;
 }
 
+.filler {
+    font-family: "Raleway";
+    font-size: 1.2em;
+    float: right;
+    text-align: left;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
 .recipeTitle {
     font-family: "Raleway";
     font-size: 1.2em;
