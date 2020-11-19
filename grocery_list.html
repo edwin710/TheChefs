@@ -4,7 +4,7 @@
     <h1>The Chefs</h1>
  
 
-    
+
         <div class="tags">
             <a>Meal Planner</a>
             <a>Explore</a>
@@ -15,75 +15,52 @@
 
 
         <div class="grocer">
-            <p>Grocery List</p>
-            <button>Print All</button>
-            <ul>Sunday
-                
+            <ul> Grocery List
                 <li>Soy Sauce</li>
                 <li>Shrimp</li>
                 <li>Scallions</li>
                 <li>Ginger</li>
                 <li>Rice</li>
                 <li>Pepper</li>
-                <button>Print</button>
-            </ul>
-
-           
-
-            <ul>Monday
                 <li>Chicken</li>
                 <li>Olive Oil</li>
-                <li>Unsalted Butter</li>
                 <li>Garlic</li>
                 <li>Pasta</li>
                 <li>Lemon</li>
                 <li>Parmesan</li>
                 <li>Parsely</li>
-                <button>Print</button>
             </ul>
-
-
-            <ul>Tuesday
-                <li>Egg</li>
-                <li>Mayonnaise</li>
-                <li>Bread</li>
-                <button>Print</button>
-            </ul>
-
-
-
-            <ul>Weednesday
-                <li>Milk</li>
-                <li>Cereal</li>
-                <button>Print</button>
-            </ul>
-
-
-            <ul>Thursday
-                <li>Tortillas</li>
-                <li>Red Chile</li>
-                <li>Sour Cream</li>
-                <li>Queso Fresco</li>
-                <button>Print</button>
-            </ul>
-
-
-            <ul>Friday
-                <li>Salmon</li>
-                <li>Honey</li>
-                <li>Carrots</li>
-                <li>Dijon Mustard</li>
-                <li>Lime Juice</li>
-                <button>Print</button>
-            </ul>
-
-
-            <ul>Saturday
-                <li>Cup Ramen</li>
-                <button>Print</button>
-            </ul>
-
-
         </div>
+
+        <div class="addNewGrocer">
+            <button onclick="myFunction()">+</button>
+                <div id="textBox">
+                    Item: <input type="text" id="fitem">
+                    <input type="submit" value="Add New" id = "add">
+                </div>
+        </div>
+
+
+
+        <script>
+            document.getElementById("add").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("fitem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("list").appendChild(node);
+            }//function
+
+            myFunction() {
+                var x = documentgetElementById("textBox");
+                if(x.style.display == "none"){
+                    x.style.display = "block";
+                }//if
+                else{
+                    x.style.display = "none";
+                }//else
+            }//myFunction
+        </script>
+
 </html>
 

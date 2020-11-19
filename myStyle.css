@@ -21,7 +21,7 @@ h1{
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 125px;
+    padding: 14px 15px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -37,20 +37,34 @@ h1{
 }
 
 .grocer ul{
-    font-size: 20px;
-    border-style: solid;
+    font-size: x-large;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .grocer li{
-    text-indent: 50px;
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+    font-weight: normal;
 }
 
-.grocer p{
+.addNewGrocer button{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50%;
+    background-color: rgba(107, 209, 6, 0.651);
+    border: none;
+    border-radius: 50%;
+    color: white;
     font-size: 25px;
-    font-weight: bold;
-    text-align: center;
 }
 
-.grocer button{
-    text-align: center;
+.addNewGrocer button:hover {
+    border: solid black;
+}
+
+#textBox{
+    margin-left: 25%;
 }
