@@ -1,3 +1,10 @@
+/*
+colors
+reddish-orange: #e7a272
+cream: #f2dab1
+blue: #79a89e
+*/
+
 body {
     margin: 0;
     width: 100%;
@@ -6,7 +13,7 @@ body {
 
 .container {
     width: 100%;
-    height: 820px;
+    height: 1000px;
     display: inline-grid;
     /*justify-content: center;*/
     background-color: bisque;
@@ -295,12 +302,6 @@ a {
 #add:hover {
     box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
 }
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
   
   .tags{
     overflow: hidden;
