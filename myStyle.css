@@ -150,7 +150,7 @@ h1{
 /* Favorites page class*/
 
 .container {
-    width: 375px;
+    width: 1000px;
     height: 820px;
     display: inline-grid;
     background-color: bisque;
@@ -159,19 +159,21 @@ h1{
 .containerTitle {
     font-family: "Raleway";
     font-size: 2.3em;
-    float: right;
-    padding-right: 2.5em;
+    float: center;
+    padding-left: 9.5em;
     padding-top: .5em;
 }
 
 .card1 {
-    width: 320px;
-    height: 100px;
+    width: 700px;
+    height: 150px;
+    right: -30%;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
-    margin: auto;
+    margin: center;
     margin-top: -10em;
+    margin-right: 40em;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -191,13 +193,15 @@ h1{
 }
 
 .card2 {
-    width: 320px;
+    width: 700px;
     height: 100px;
+    right: -30%;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
     margin-top: -10.5em;
+    margin-right: 40em;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -287,7 +291,7 @@ h1{
 #new {
     position: absolute;
     bottom: 6%;
-    left: 45%;
+    left: 48%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightyellow;
