@@ -6,25 +6,19 @@ blue: #79a89e
 */
 
 body {
-    margin: 0;
+    margin: auto;
     width: 100%;
     height: auto;
-}
-
-.container {
-    width: 100%;
-    height: 1000px;
-    display: inline-grid;
-    /*justify-content: center;*/
     background-color: bisque;
 }
 
-.containerTitle {
+.suggest {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.3em;
-    padding-left: 2em;
-    padding-right: 2.5em;
+    font-size: 1.2em;
+    float: left;
+    padding-left: .7em;
     padding-top: .5em;
+    text-decoration: underline;
 }
 
 a {
@@ -38,17 +32,14 @@ a {
 }
 
 .card1 {
-    width: 320px;
-    height: 100px;
+    width: 50em;
+    height: 10em;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    right: 35%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+    margin-left: 5em;
+    margin-top: 5em;
 }
 
 .card12 {
@@ -178,29 +169,21 @@ a {
     
 }
 
-.suggest {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2em;
-    float: right;
-    padding-left: .7em;
-    padding-top: .5em;
-    text-decoration: underline;
-}
-
 .recipeTitle {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.15em;
-    float: right;
-    padding-right: .5em;
-    padding-top: .5em;
+    font-size: 1.5em;
+    float: left;
+    margin-left: 11em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 .recipeDesc {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.8em;
-    float: right;
-    text-align: right;
-    padding-right: .5em;
+    font-size: 1em;
+    float: left;
+    text-align: left;
+    padding-left: 12.5em;
     width: 60%;
     margin-top: -.5em;
 }
@@ -216,9 +199,11 @@ a {
 }
 
 .foodPic {
-    width: 7em;
-    height: 7em;
+    width: 13em;
+    height: 13em;
     position: absolute;
+    margin-top: -1.5em;
+    margin-left: -.5em;
     
 }
 
@@ -259,14 +244,14 @@ a {
 }
 
 #view {
-    width: 6.5em;
-    position: absolute;
-    bottom: 7%;
-    right: 3%;
+    width: 5em;
+    height: 2em;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -5em;
 }
 
 #addPlan {
@@ -289,14 +274,14 @@ a {
 }
 
 #add {
-    width: 6.5em;
-    position: absolute;
-    bottom: 7%;
-    right: 37%;
+    width: 5em;
+    height: 2em;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -1.25em;
 }
 
 #add:hover {
