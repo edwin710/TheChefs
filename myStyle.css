@@ -160,7 +160,7 @@ h1{
     font-family: "Raleway";
     font-size: 2.3em;
     float: center;
-    padding-left: 9.5em;
+    padding-left: 7em;
     padding-top: .5em;
 }
 
@@ -171,18 +171,19 @@ h1{
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    margin-left: 5em;
-    margin-top: 3em;
+    margin-left: 15em;
+    margin-top: -.5em;
 }
 
 .card1View {
-    width: 320px;
-    height: 300px;
+    width: 50em;
+    height: 30em;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    margin-top: -22em;
+    margin-left: 15em;
+    margin-top: -10em;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -266,7 +267,7 @@ h1{
 }
 
 .foodPic {
-    width: 12em;
+    width: 13em;
     height: 12em;
     position: absolute;
     margin-top: -.85em;
@@ -287,9 +288,21 @@ h1{
 #view:hover {
     box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
 }
+
+#view2 {
+    width: 5em;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -5em;
+}
+
 #new {
     position: absolute;
-    bottom: 6%;
+    top: 12em;
     left: 48%;
     border: 1px solid transparent;
     border-radius: 1em;
@@ -298,8 +311,8 @@ h1{
 }
 #f2new {
     position: absolute;
-    bottom: -15%;
-    left: 45%;
+    top: 12em;
+    left: 48%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightyellow;
