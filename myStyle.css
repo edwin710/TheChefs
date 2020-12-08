@@ -387,16 +387,17 @@ h1{
 }
 
 #new {
-    position: absolute;
-    top: 12em;
-    left: 48%;
+    width: 5em;
+    height: 2em;
     border: 1px solid transparent;
     border-radius: 1em;
-    background-color: lightyellow;
+    background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+
 }
 #f2new {
-    position: absolute;
+    position: left;
     width: 6em;
     height: 2em;
     margin-bottom: 33em;
