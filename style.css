@@ -299,6 +299,18 @@ a {
     margin-top: -1.25em;
 }
 
+#new {
+    position: absolute;
+    width: 6em;
+    height: 2em;
+    margin-bottom: 43em;
+    margin-left: -10em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
 #add:hover {
     box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
 }
