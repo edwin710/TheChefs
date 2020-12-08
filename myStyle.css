@@ -424,3 +424,18 @@ h1{
     margin-right: auto;
     width: 10%;
   }
+
+#add {
+    width: 5em;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -1.25em;
+}
+
+#add:hover {
+    box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
+}
