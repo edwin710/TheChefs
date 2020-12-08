@@ -230,6 +230,12 @@ h1{
     width: 1000px;
     height: 820px;
     display: inline-grid;
+}
+
+.container2 {
+    width: 1000px;
+    height: 550px;
+    display: inline-grid;
     background-color: bisque;
 }
 
@@ -244,7 +250,7 @@ h1{
 .card1 {
     width: 50em;
     height: 10em;
-    background-color: lightyellow;
+    background-color: bisque;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
@@ -306,10 +312,9 @@ h1{
 }
 
 .recipe{
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10em;
+    padding-left: 4em;
+    padding-right: 23.8em;
+    margin-top: -5em;
 }
 
 .filler {
@@ -386,11 +391,13 @@ h1{
 }
 #f2new {
     position: absolute;
-    top: 12em;
-    left: 48%;
+    width: 6em;
+    height: 2em;
+    margin-bottom: 33em;
+    margin-left: -10em;
     border: 1px solid transparent;
     border-radius: 1em;
-    background-color: lightyellow;
+    background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
 }
 
@@ -423,8 +430,8 @@ h1{
 #goBack {
     width: 8em;
     position: absolute;
-    bottom: 20%;
-    left: 10%;
+    top: 95%;
+    left: 5%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -434,12 +441,22 @@ h1{
 #addRecipe {
     width: 8em;
     position: absolute;
-    bottom: 20%;
-    right: 10%;
+    top: 95%;
+    right: 50%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+.newRecipe {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    float: left;
+    text-align: left;
+    left: 20%;
+    width: 60%;
+    margin-top: -.5em;
 }
 
 .center {
