@@ -1,10 +1,40 @@
-<DOCTYPE html>
-    <link rel="stylesheet" href="myStyle.css"> 
-    <h1>Meal Preppin'</h1>
-    <h1>&nbsp;</h1>
-    <img src="Vegetables_PNGs/logo.png" alt="logo" width="450" height="500" class = "center">
-    <h1>&nbsp;</h1>
-    <form action="form.html">
-        <input type="submit" value="GET STARTED" class="center2"/>
-    </form>
-</DOCTYPE>
+<!DOCTYPE html>
+<link rel="stylesheet" href="myStyle.css"> 
+<h1>Meal Preppin'</h1>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel Gallery Slider</title>
+</head>
+<body>
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="images/img1.jpg">
+            <p class="captionText"></p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/img2.jpg">
+            <p class="captionText"></p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/img3.jpg">
+            <p class="captionText"></p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/img4.jpg">
+            <p class="captionText"></p>
+        </div>
+    </div>
+    
+    <div id="dotsContainer"></div>
+</div>
+
+<script src="myScript.js"></script>
+</body>
+</html>
