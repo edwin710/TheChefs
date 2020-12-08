@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<body style="background-color: #2A4D73; background-image: url('Background/background2.jpg'); background-size: cover; background-blend-mode: screen;">
+<body>
 
     <div class="row" style="margin-block-start: 10px; background-color: bisque;" >
         <div class="column" style="width: 100px; height: 100px; margin: 10px">
-         <button class="plan" onclick="window.location.href='planner.html'" style="width: 100%; height: 100%; background-color: bisque; border: none;">
+         <button class="plan" onclick="window.location.href='landingPage.html'" style="width: 100%; height: 100%; background-color: bisque; border: none;">
          <div class="img2" style="background-image: url('../TheChefs/Vegetables_PNGs/logo.png'); width: 100%; height: 100%;"></div>
          </button>
      </div>
@@ -12,23 +12,21 @@
      </div>
 </div>
 <link rel="stylesheet" href="myStyle.css"> 
-<img src="images/avatar.png" class="avatar2">
 
 <html>
 <head>
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="galleryContainer">
+<br></br>
+<div class="galleryContainer" style="box-shadow: none; padding: 0px; max-width: 100%;">
     <div class="slideShowContainer">
-        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
-        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
-        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="captionTextHolder" style="background: none;"><p class="captionText slideTextFromTop"></p></div>
         <div class="imageHolder">
             <img src="images/img1.jpg">
             <p class="captionText"></p>
         </div>
-        <div class="imageHolder">
+        <div class="imageHolder" >
             <img src="images/img2.jpg">
             <p class="captionText"></p>
         </div>
@@ -44,11 +42,11 @@
     
     <div id="dotsContainer"></div>
 </div>
-
-<form action = "form.html" >
-    <button id = "getStarted">Get Started</button>
-</form>
-
+<div class="plan">
+	<h1>
+    	<button style="height: 50px; width: 50%;" onclick="window.location.href='form.html'">Get Started</button>
+	</h1>
+</div>
 <script src="myScript.js"></script>
 </body>
 </html>
