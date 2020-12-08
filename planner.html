@@ -1,150 +1,528 @@
-<DOCTYPE html>
-    <link rel="stylesheet" href="myStyle.css">
-    <meta name = "viewport" contents="width=device-width, initialscale-1">
-   <!-- <h1>Meal Preppin'</h1-->
- 
+<!DOCTYPE html>
 
-    
-        <div class="tags">
-            <a href="planner.html">Meal Planner</a>
-            <a href = "explore.html">Explore</a>
-            <a href = "favorites.html">Favorites</a>
-            <a href = "grocery_list.html">Grocery List</a>
-			<a href = "preferences.html">Preferences</a>
+<!-- If you want the background image, just copy the line below... -->
 
-        </div>
+<body style="background-color: #2A4D73; background-image: url('../TheChefs/Background/background2.jpg'); background-size: cover; background-blend-mode: screen;">
 
+<!-- To here. -->
+
+<link rel="stylesheet" href="myStyle.css">
+<meta name = "viewport" contents="width=device-width, initialscale-1">
+
+<!-- Copy Header code from here... -->
+
+<!-- <h1>Meal Preppin'</h1-->
+<div class="row" style="margin-block-start: 10px; background-color: bisque;" >
+   		<div class="column" style="width: 100px; height: 100px; margin: 10px">
+			<button class="plan" onclick="window.location.href='planner.html'" style="width: 100%; height: 100%; background-color: bisque; border: none;">
+			<div class="img2" style="background-image: url('../TheChefs/Vegetables_PNGs/logo.png'); width: 100%; height: 100%;"></div>
+			</button>
+		</div>
+  		<div class="column plan" style="height: 100px;">
+			<p style="font-size: 50px; text-align:left; margin-block-start: 30px; margin-block-end: 25px;"> Meal Preppin' </p>
+		</div>
+</div>
+
+<!-- To here! -->
+
+<!-- Navigation Tabs -->  
+	<div class="tags">
+      		<a href = "planner.html">Meal Planner</a>
+      		<a href = "explore.html">Explore</a>
+      		<a href = "favorites.html">Favorites</a>
+      		<a href = "grocery_list.html">Grocery List</a>
+      		<a href = "preferences.html">Preferences</a>
+   	</div>
+	<div class="plan">
+		<p style="font-size: 50px; text-align: center;">Meal Planner</p>	
+	</div>
+	<div class="plan" style="background-color: orange; margin: 10px;">
+		
 		<div class="plan">
-
-			<p>Meal Planner
-				<button onclick="window.location.href='plannerNewMode.html'">New Plan</button>
-			</p>
-			<table border="1" cellspacing="0" align="center"> 
-			<!--<caption>Timetable</caption>-->
-
-			<tr> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Sunday</b></br> 
+		<br></br>	
+		<footer style="color: white; font-size:32px;">Current Plan</footer>
+		</div>
+		<table class="plan" style="width: 100%;"> 
+      		<!--<caption>Timetable</caption>-->
+      			<tr> 
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Sunday')">
+					<div>
+						<div style="text-align: left;">Sunday</div>
+						<img src="../TheChefs/Vegetables_PNGs/bellPepper.png" alt="Onion Soup" style="width:100%;">	
+					</div>
+					</button>				 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Monday</b>
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Monday')">
+					<div>
+						<div style="text-align: left;">Monday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/Broc.png" alt="Onion Soup" style="width:100%;">	
+					</div>
+					</button>	 			 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Tuesday</b> 
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Tuesday')">
+					<div>
+						<div style="text-align: left;">Tuesday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/Carrot.png" alt="Onion Soup" style="width:100%;">	
+					</div>
+					</button>	 			 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Wednesday</b> 
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Wednesday')">
+					<div>
+						<div style="text-align: left;">Wednesday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/eggplant.png" alt="Onion Soup" style="width:100%;">		
+					</div>
+					</button>	 			 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Thursday</b> 
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Thursday')">
+					<div>
+						<div style="text-align: left;">Thursday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/Avocado.png" alt="Onion Soup" style="width:100%;">	
+					</div>
+					</button>	 			 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Friday</b> 
+	 			<td align="center"> 
+					<button onclick="openDaily(event,'Friday')">
+					<div>
+						<div style="text-align: left;">Friday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/tomato.png" alt="Onion Soup" style="width:100%;">	
+					</div>
+					</button>	 			 
 				</td> 
-				<td align="center" height="20" 
-					width="100"> 
-					<b>Saturday</b>  
+				<td align="center"> 
+					<button onclick="openDaily(event,'Saturday')">
+					<div>
+						<div style="text-align: left;">Saturday</div>
+        					<img src="../TheChefs/Vegetables_PNGs/greenChile.png" alt="Onion Soup" style="width:100%;">		
+					</div>
+					</button>	 			 
 				</td> 
 			</tr> 
-			<tr> 
-				<td align="center" height="100">Breakfast
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td> 
-				<td align="center" height="100">Breakfast
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/broc.png" alt="Roasted Brocolli's">
-					</div>
-				</td> 
-				<td align="center" height="100">Breakfast
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/bellPepper.png" alt="Bell Pepper Fajita's">
-					</div>
-				</td> 
-				<td align="center" height="100">Breakfast
-				</td>  
-				<td align="center" height="100">Breakfast
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/broc.png" alt="Roasted Brocolli's">
-					</div>
-				</td>  
-				<td align="center" height="100">Breakfast
-				</td> 
-				<td align="center" height="100">Breakfast
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td> 
-			</tr> 
-			<tr> 
-				<td align="center" height="100">Lunch
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td> 
-				<td align="center" height="100">Lunch
-				</td>  
-				<td align="center" height="100">Lunch
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/broc.png" alt="Roasted Brocolli's">
-					</div>
-				</td> 
-				<td align="center" height="100">Lunch
-				</td>  
-				<td align="center" height="100">Lunch
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td>  
-				<td align="center" height="100">Lunch
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/greenChile.png" alt="Green Chile Enchiladas">
-					</div>
-				</td> 
-				<td align="center" height="100">Lunch
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td> 
-			</tr> 
-			<tr> 
-				<td align="center" height="100">Dinner
-				</td> 
-				<td align="center" height="100">Dinner
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/greenChile.png" alt="Green Chile Enchiladas">
-					</div>
-				</td> 
-				<td align="center" height="100">Dinner
-				</td> 
-				<td align="center" height="100">Dinner
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/onion.png" alt="Onion Soup">
-					</div>
-				</td> 
-				<td align="center" height="100">Dinner
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/broc.png" alt="Roasted Brocolli's">
-					</div>
-				</td> 
-				<td align="center" height="100">Dinner
-					<div>
-						<img src="../TheChefs/Vegetables_PNGs/bellPepper.png" alt="Bell Pepper Fajita's">
-					</div>
-				</td> 
-				<td align="center" height="100">Dinner
-				</td> 
-			</tr>
-       
 		</table>
+		<br></br>
+		<!-- Daily View -->
+		<div id="Sunday" class="plan day animate-opacity" style="color: white;">
+  			<footer style="color: white; font-size:32px;"> Sunday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe1.jpg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Mac N' Cheese </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 20 mins </td>
+					<td style="text-align: center;"> Cook Time: 15 mins </td>
+					<td style="text-align: center;"> Total Time: 35 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 8 - 10 servings </td>
+					<td style="text-align: center;"> Calories: 665 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> 1 lb. dried elbow pasta </li>
+				<li> 1/2 cup unsalted butter </li>
+				<li> 1/2 cup all purpose flour </li>
+				<li> 1 1/2 cups whole milk </li>
+				<li> 2 1/2 cups half and half </li>
+				<li> 4 cups grated medium sharp cheddar cheese - divided (measured after grating) </li>
+				<li> 2 cups grated Gruyere cheese - divided (measured after grating) </li>
+				<li> 1/2 Tbsp. salt </li>
+				<li> 1/2 tsp. black pepper </li>
+				<li> 1/4 tsp. paprika </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> Boil the pasta, drain. </li>
+				<li> Make the cheese sauce by combining a fat (butter), and starch (flour), then whisking in the milk products. </li>
+				<li> Cook the sauce until it’s nice and thick. </li>
+				<li> Add in shredded cheeses, stir well. </li>
+				<li> Combine cheese sauce with cooked pasta. </li>
+				<li> Transfer half of the mac and cheese to a baking dish, sprinkle with more shredded cheese. </li>
+				<li> Top with the rest of the mac and cheese, top with more shredded cheese. </li>
+				<li> Bake and prepare to thoroughly enjoy! </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Monday" class="plan day animate-opacity" style="color: white; display: none;">
+			<footer style="color: white; font-size:32px;"> Monday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe2.jpg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Grilled Chicken with Asparagus </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 10 mins </td>
+					<td style="text-align: center;"> Cook Time: 20 mins </td>
+					<td style="text-align: center;"> Total Time: 30 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 4 servings </td>
+					<td style="text-align: center;"> Calories: 180 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> 4 boneless skinless chicken breasts pounded to even thickness, OR 6-8 boneless skinless chicken thighs </li>
+				<li> 1 large bundle of asparagus spears (about 1 pound) </li>
+				<li> 1 lemon, divided </li>
+				<li> 1 teaspoon minced garlic </li>
+				<li> 3 tablespoons butter, melted </li>
+				<li> 1 1/2 teaspoons Italian seasoning </li>
+				<li> salt and pepper to taste </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> Lay four 12x12 inch squares of foil out on a flat surface. Place one chicken breasts (or 1-2 thighs) in the middle of each piece of foil. </li>
+				<li> Trim the flat end of the asparagus at 1-2 inches from the end and discard. Cut the remaining spears in half and divided them between the foil packs. </li>
+				<li> Thinly slice one of the lemons and divide the slices between the foil packs, tucking the slices in, around, and between the chicken and asparagus. </li>
+				<li> Stir together butter, garlic, juice of the remaining lemon, and Italian seasoning. Brush over chicken and asparagus. Sprinkle with salt and pepper to taste. </li>
+				<li> Fold the foil over the chicken and asparagus to close off the pack, pinch the ends together so the pack stays closed. </li>
+				<li> Grill over medium-high heat for 7-9 minutes on each side OR bake at 400 for 15-20 minutes or until chicken is cooked through and asparagus is tender. Serve immediately. </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "https://www.lecremedelacrumb.com/lemon-chicken-asparagus-foil-packs/">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Tuesday" class="plan day animate-opacity" style="color: white; display: none;">
+  			<footer style="color: white; font-size:32px;"> Tuesday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe3.jpg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Spaghetti with Garlic and Olive Oil </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 5 mins </td>
+					<td style="text-align: center;"> Cook Time: 10 mins </td>
+					<td style="text-align: center;"> Total Time: 15 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 4 servings </td>
+					<td style="text-align: center;"> Calories: 444 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> 1 package spaghetti, (12 ounces) gluten-free, if desired </li>
+				<li> sea salt, to taste </li>
+				<li> 4 Tablespoons olive oil </li>
+				<li> 2 cubes Dorot Gardens Garlic </li>
+				<li> 1/4 teaspoon crushed red pepper flakes, (or to taste) </li>
+				<li> fresh parsley, minced, for garnish (optional) </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> Bring a pot of salted water to a boil. Add the spaghetti and cook according to the package directions. </li>
+				<li> When the pasta is close to being done, heat the olive oil in a small sauce pan over medium heat. Add the garlic and crushed red chili flakes. Quickly stir and remove from the heat when the garlic appears lightly browned. This should take less than a minute. </li>
+				<li> As soon as the spaghetti is cooked, drain it and transfer it to a large serving bowl. </li>
+				<li> Pour the hot olive oil mixture over the pasta and toss to coat all the noodles. </li>
+				<li> Top with minced parsley leaves, if desired, and serve immediately. </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "https://www.veggiessavetheday.com/spaghetti-with-garlic-and-olive-oil/">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Wednesday" class="plan day animate-opacity" style="color: white; display: none;">
+			<footer style="color: white; font-size:32px;"> Wednesday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe4.jpeg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Chicken Alfredo </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 0 mins </td>
+					<td style="text-align: center;"> Cook Time: 0 mins </td>
+					<td style="text-align: center;"> Total Time: 0 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 0 servings </td>
+					<td style="text-align: center;"> Calories: 0 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Thursday" class="plan day animate-opacity" style="color: white; display: none;">
+  			<footer style="color: white; font-size:32px;"> Thursday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe5.jpg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Veggie Protein Salad </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 0 mins </td>
+					<td style="text-align: center;"> Cook Time: 0 mins </td>
+					<td style="text-align: center;"> Total Time: 0 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 0 servings </td>
+					<td style="text-align: center;"> Calories: 0 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Friday" class="plan day animate-opacity" style="color: white; display: none;">
+  			<footer style="color: white; font-size:32px;"> Friday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe6.jpg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Homemade Pizza </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 0 mins </td>
+					<td style="text-align: center;"> Cook Time: 0 mins </td>
+					<td style="text-align: center;"> Total Time: 0 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 0 servings </td>
+					<td style="text-align: center;"> Calories: 0 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+		<div id="Saturday" class="plan day animate-opacity" style="color: white; display: none;">
+  			<footer style="color: white; font-size:32px;"> Saturday </footer>
+			<div style="background-color: #ECCE77;">
+				<div class="img2" style="background-image: url('../TheChefs/Background/recipe7.jpeg'); width: 100%; height: 300px;"></div>
+				<h1 style="color: black;"> Grilled Burger Sliders </h1>
+				<!-- Info -->
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Prep Time: 0 mins </td>
+					<td style="text-align: center;"> Cook Time: 0 mins </td>
+					<td style="text-align: center;"> Total Time: 0 mins </td>
+				</tr>
+				</table>
+				<table class="plan" style="width: 100%;">
+				<tr>
+					<td style="text-align: center;"> Servings: 0 servings </td>
+					<td style="text-align: center;"> Calories: 0 </td>
+				</tr>
+				</table>
+				<br></br>
+				<!-- Ingredients / Instructions -->
+				<footer style="font-size: 32px; color: black;"> Ingredients </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="font-size: 32px; color: black;"> Instructions </footer>
+				<ul style="indent: 10px; font-size: 24px; color: black;">
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				</ul>
+				<footer style="indent: 10px; font-size: 24px; color: black;">
+				<a u href = "">
+				Go to Original Recipe
+				</a u>
+				</footer>
+				<br></br>
+			</div>
+		</div>
+	</div>
+<!-- Upcoming Plans -->
+	<div class="plan" style="background-color: orange; margin: 10px;">
+		<br></br>
+		<footer style="color: white; font-size:32px">
+			Upcoming Plans
+		</footer>
+		<div class="plan" style="color: white; indent: 10px; font-size: 24px; color: black;" align="center"> Looks like you dont have any upcoming plans.
+		<br></br>
+		<div class="plan" align="center">
+			<button class="plan" onclick="window.location.href='plannerNewMode.html'" style="width: 75%; height: 100px; font-size: 32px;">
+				<div class="plan">New Plan</div>	
+			</button>
+			</div>
+			<br></br>
+ 		</div>
+	</div>
+<div>
+	<br></br>
+	<br></br>
+</div>
+
+<!-- If you want footer, copy from here... -->
+
+<!-- Footer -->
+	<div style="position: fixed; bottom: 0; width: 100%;">
+		<div class="tags">
+			<a href = "planner.html">Meal Planner</a>
+   		   	<a href = "explore.html">Explore</a>
+   		   	<a href = "favorites.html">Favorites</a>
+    		  	<a href = "grocery_list.html">Grocery List</a>
+     		 	<a href = "preferences.html">Preferences</a>
+			<br></br>
+		</div>
 	</div>
 
+<!-- To here! -->
+
+</body>
+
+
 </html>
+
+<script>
+// Tabs
+function openDaily(evt, dayName) {
+  var i;
+  var x = document.getElementsByClassName("day");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(dayName).style.display = "block";
+}
+
+
+</script>
 

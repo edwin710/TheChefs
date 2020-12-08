@@ -4,6 +4,9 @@
 /* Tester Code */
 body{
     background-color: bisque;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 h1{
@@ -24,6 +27,7 @@ h1{
     padding: 14px 15px;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .tags a:hover{
@@ -33,32 +37,58 @@ h1{
 
 /*Planner Classes*/
 
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.column {
+   float: left;
+   width: 50%;
+}
+
+.plan animate-opacity {
+    animation:opac 0.8s
+}@keyframes opac{from{opacity:0} to{opacity:1}}
+
 .plan {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .plan table{
-    width: 100%;
-    border: 1px orange;
-    background-color: #ECCE77;
+    table-layout: fixed;
+    background-color: orange;
+    border-spacing: 0px;
+   
 }
 
 .plan tr{
+    height:100%;
     vertical-align: text-top;
     font-size: 20px;
     border-style: solid;
 }
 
 .plan td{
+    height: 100%;
+    overflow: hidden;
     vertical-align: text-top;
-    text-align: left;
+    text-align: left; 
+    background-color: #ECCE77;
 }
 
 .plan p{
     font-size: 25px;
     font-weight: bold;
     text-indent: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+.plan footer{
+    font-size: 25px;
+    text-indent: 10px;
+    text-align: left;
 }
 
 .plan button{
@@ -66,21 +96,52 @@ h1{
     border: none;
     font-size: 24px;
     background-color: #ECCE77;
+    transition-duration: 0.4s;
+}
+
+.plan button:hover {
+    background-color: white;
 }
 
 .plan img{
-    align: center;
-    width: 50%;
-    height: 50%:
+    width: auto;
+    height: auto;
 }
 
-.button1{
+.plan button1{
     text-align: center;
     border: none;
     font-size: 24px;
     background-color: #ECCE77;
     width: 100%;
     height: 70%;
+}
+
+.plan button1:hover {
+    background-color: white;
+}
+
+.img2 {
+    width: 500px;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.square {
+     position: relative;
+     width: 200px;     
+     height: 200px;
+     overflow: hidden;
+}
+
+
+.topleft {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
 }
 
 /*Grocery List Classes*/
@@ -166,54 +227,53 @@ h1{
 /* Favorites page class*/
 
 .container {
-    width: 375px;
+    width: 1000px;
     height: 820px;
     display: inline-grid;
     background-color: bisque;
 }
 
 .containerTitle {
-    font-family: "Raleway";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.3em;
-    float: right;
-    padding-right: 2.5em;
+    float: left;
+    padding-left: 1.5em;
     padding-top: .5em;
 }
 
 .card1 {
-    width: 320px;
-    height: 100px;
+    width: 50em;
+    height: 10em;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    margin-top: -10em;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    margin-left: 5em;
+    margin-top: 5em;
 }
 
 .card1View {
-    width: 320px;
-    height: 300px;
+    width: 50em;
+    height: 30em;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    margin-top: -22em;
-    justify-content: center;
-    align-items: center;
+    margin-left: 5em;
+    margin-top: -15em;
     position: relative;
 }
 
 .card2 {
-    width: 320px;
+    width: 700px;
     height: 100px;
+    right: -30%;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
     margin-top: -10.5em;
+    margin-right: 40em;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -253,7 +313,7 @@ h1{
 }
 
 .filler {
-    font-family: "Raleway";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
     float: right;
     text-align: left;
@@ -263,47 +323,62 @@ h1{
 }
 
 .recipeTitle {
-    font-family: "Raleway";
-    font-size: 1.2em;
-    float: right;
-    padding-right: .5em;
-    padding-top: .5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    float: left;
+    margin-left: 11em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 .recipeDesc {
-    font-family: "Raleway";
-    font-size: 0.8em;
-    float: right;
-    text-align: right;
-    padding-right: .5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    float: left;
+    text-align: left;
+    padding-left: 12.5em;
     width: 60%;
     margin-top: -.5em;
 }
 
 .foodPic {
-    width: 7em;
-    height: 7em;
-    position: absolute;  
+    width: 13em;
+    height: 12em;
+    position: absolute;
+    margin-top: -.85em;
+    margin-left: -.5em;  
 }
 
 #view {
-    width: 10em;
-    position: absolute;
-    bottom: 4%;
-    right: 11%;
+    width: 5em;
+    height: 2em;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -5em;
 }
 
 #view:hover {
     box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
 }
+
+#view2 {
+    width: 5em;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -5em;
+}
+
 #new {
     position: absolute;
-    bottom: 6%;
-    left: 45%;
+    top: 12em;
+    left: 48%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightyellow;
@@ -311,8 +386,8 @@ h1{
 }
 #f2new {
     position: absolute;
-    bottom: -15%;
-    left: 45%;
+    top: 12em;
+    left: 48%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightyellow;
@@ -327,7 +402,18 @@ h1{
     width: 10em;
     position: absolute;
     bottom: 5%;
-    right: 11%;
+    right: 6%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#addPlan {
+    width: 10em;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -370,3 +456,17 @@ h1{
     width: 10%;
   }
 
+#add {
+    width: 5em;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -1.25em;
+}
+
+#add:hover {
+    box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
+}

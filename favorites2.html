@@ -7,6 +7,19 @@
 </head>
 
 <body>
+
+        <!-- <h1>Meal Preppin'</h1-->
+    <div class="row" style="margin-block-start: 10px; background-color: bisque;" >
+        <div class="column" style="width: 100px; height: 100px; margin: 10px">
+        <button class="plan" onclick="window.location.href='planner.html'" style="width: 100%; height: 100%; background-color: bisque; border: none;">
+        <div class="img2" style="background-image: url('../TheChefs/Vegetables_PNGs/logo.png'); width: 100%; height: 100%;"></div>
+        </button>
+    </div>
+    <div class="column plan" style="height: 100px;">
+        <p style="font-size: 50px; text-align:left; margin-block-start: 30px; margin-block-end: 25px;"> Meal Preppin' </p>
+    </div>
+    </div>
+
     <!-- NAVIGATION MENU -->
     <div class="tags">
         <a href = "planner.html">Meal Planner</a>
@@ -21,33 +34,79 @@
         </div>
         
         <div class = "card1">
-            <img class ="foodPic" src="Vegetables_PNGs/Pumpkim.png" alt="Pumpkin Pie">
+            <img class ="foodPic" src="Vegetables_PNGs/Broc.png" alt="Broccoli">
             <div>
-                <h1 class = "recipeTitle">Grandma's Pumpkin Pie</h1>
-                <p class = "recipeDesc">Total Time: 30 minutes.</p>
+                <h1 class = "recipeTitle"><u>Broccoli Cheddar Soup</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 10 minutes. <strong>Cook Time</strong>: 35 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 45 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: broccoli, cheddar, milk</p>
             </div>
             <form action = "pumpkinView.html" >
-                <button id = "view">View</button>
+                <button id = "view2">View</button>
             </form>
         </div>
-        <div class = "card2">
+        <div class = "card1">
             <img class = "foodPic" src="Vegetables_PNGs/Carrot.png" alt="SweetPotato">
             <div>
-                <h1 class = "recipeTitle">Shirley's Carrot Cake</h1>
-                <p class = "recipeDesc">Total Time: 75 minutes.</p>
+                <h1 class = "recipeTitle"><u>Honey Butter Roasted Carrots</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 10 minutes. <strong>Cook Time</strong>: 20 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 30 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: carrots, honey, parsley</p>
             </div>
             <form action = "carrotView.html" >
+                <button id = "view2">View</button>
+            </form>
+        </div>
+
+        <div class = "card1">
+            <img class ="foodPic" src="Vegetables_PNGs/Pumpkim.png" alt="Pumpkin Pie">
+            <div>
+                <h1 class = "recipeTitle"><u>Pumpkin Oatmeal</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 2 minutes. <strong>Cook Time</strong>: 8 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 10 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: pumpkin, oats, brown sugar</p>
+            </div>
+            <form action = "exPumpkinView.html" >
                 <button id = "view">View</button>
             </form>
         </div>
-        <div class = "card3">
-            <img class = "foodPic" src="Vegetables_PNGs/beet.png" alt="SweetPotato">
+    
+        <div class = "card1">
+            <img class ="foodPic" src="Vegetables_PNGs/bellPepper.png" alt="green chile">
             <div>
-                <h1 class = "recipeTitle">Pickled Beets</h1>
-                <p class = "recipeDesc">Total Time: 2 days.</p>
+                <h1 class = "recipeTitle"><u>Vegetarian Fajitas</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 15 minutes. <strong>Cook Time</strong>: 20 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 35 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: bell pepper, mushrooms, onion, lime, paprika, cilantro</p>
             </div>
-            <form action = "carrotView.html" >
+            <form action = "bellPepView.html">
                 <button id = "view">View</button>
+            </form>
+        </div>
+    
+        <div class = "card1">
+            <img class ="foodPic" src="Vegetables_PNGs/greenChile.png" alt="green chile">
+            <div>
+                <h1 class = "recipeTitle"><u>Green Chile Stew</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 20 minutes. <strong>Cook Time</strong>: 65 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 85 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: green chile, potato, onion, pork</p>
+            </div>
+            <form action = "greenChilView.html">
+                <button id = "view">View</button>
+            </form>
+        </div>
+
+        <div class = "card1">
+            <img class = "foodPic" src="Vegetables_PNGs/Squash.png" alt="squash">
+            <div>
+                <h1 class = "recipeTitle"><u>Baked Acorn Squash</u></h1>
+                <p class = "recipeDesc"><strong>Prep Time</strong>: 15 minutes. <strong>Cook Time</strong>: 75 minutes.</p>
+                <p class = "recipeDesc"><strong>Total Time</strong>: 90 minutes.</p>
+                <p class = "recipeDesc"><strong>Main Ingredients</strong>: acorn squash, butter, brown sugar</p>
+            </div>
+            <form action = "squashView.html">
+                <button id = "view2">View</button>
             </form>
         </div>
         <button id = "f2new">Add New</button>

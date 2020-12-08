@@ -1,23 +1,31 @@
+/*
+colors
+reddish-orange: #e7a272
+cream: #f2dab1
+blue: #79a89e
+*/
+
 body {
-    margin: 0;
+    margin: auto;
     width: 100%;
     height: auto;
-}
-
-.container {
-    width: 100%;
-    height: 820px;
-    display: inline-grid;
-    /*justify-content: center;*/
     background-color: bisque;
 }
 
-.containerTitle {
+.suggest1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.3em;
-    padding-left: 2em;
-    padding-right: 2.5em;
-    padding-top: .5em;
+    font-size: 1.7em;
+    float: left;
+    margin-left: -4.8em;
+    text-decoration: underline;
+}
+
+.suggest {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7em;
+    float: left;
+    margin-left: 1.8em;
+    text-decoration: underline;
 }
 
 a {
@@ -31,17 +39,14 @@ a {
 }
 
 .card1 {
-    width: 320px;
-    height: 100px;
+    width: 50em;
+    height: 10em;
     background-color: lightyellow;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    right: 35%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+    margin-left: 5em;
+    margin-top: 5em;
 }
 
 .card12 {
@@ -171,29 +176,29 @@ a {
     
 }
 
-.suggest {
+.containerTitle {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2em;
-    float: right;
-    padding-left: .7em;
-    padding-top: .5em;
-    text-decoration: underline;
+    font-size: 2.3em;
+    float: left;
+    padding-left: 1em;
+    padding-top: .2em;
 }
 
 .recipeTitle {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.15em;
-    float: right;
-    padding-right: .5em;
-    padding-top: .5em;
+    font-size: 1.5em;
+    float: left;
+    margin-left: 11em;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 .recipeDesc {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.8em;
-    float: right;
-    text-align: right;
-    padding-right: .5em;
+    font-size: 1em;
+    float: left;
+    text-align: left;
+    padding-left: 12.5em;
     width: 60%;
     margin-top: -.5em;
 }
@@ -209,9 +214,11 @@ a {
 }
 
 .foodPic {
-    width: 7em;
-    height: 7em;
+    width: 13em;
+    height: 13em;
     position: absolute;
+    margin-top: -1.5em;
+    margin-left: -.5em;
     
 }
 
@@ -252,14 +259,14 @@ a {
 }
 
 #view {
-    width: 6.5em;
-    position: absolute;
-    bottom: 7%;
-    right: 3%;
+    width: 5em;
+    height: 2em;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -5em;
 }
 
 #addPlan {
@@ -282,10 +289,22 @@ a {
 }
 
 #add {
-    width: 6.5em;
+    width: 5em;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    float: left;
+    margin-top: -1.25em;
+}
+
+#new {
     position: absolute;
-    bottom: 7%;
-    right: 37%;
+    width: 6em;
+    height: 2em;
+    margin-bottom: 33em;
+    margin-left: -10em;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -295,12 +314,6 @@ a {
 #add:hover {
     box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
 }
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
   
   .tags{
     overflow: hidden;
@@ -319,6 +332,98 @@ a {
 .tags a:hover{
     background-color: white;
     color: orange;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ 
+ .column {
+    float: left;
+    width: 50%;
+ }
+
+ .plan animate-opacity {
+    animation:opac 0.8s
+}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.plan {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.plan table{
+    table-layout: fixed;
+    background-color: orange;
+    border-spacing: 0px;
+   
+}
+
+.plan tr{
+    height:100%;
+    vertical-align: text-top;
+    font-size: 20px;
+    border-style: solid;
+}
+
+.plan td{
+    height: 100%;
+    overflow: hidden;
+    vertical-align: text-top;
+    text-align: left; 
+    background-color: #ECCE77;
+}
+
+.plan p{
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 10px;
+    text-align: left;
+}
+
+.plan footer{
+    font-size: 25px;
+    text-indent: 10px;
+    text-align: left;
+}
+
+.plan button{
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    background-color: #ECCE77;
+    transition-duration: 0.4s;
+}
+
+.plan button:hover {
+    background-color: white;
+}
+
+.plan img{
+    width: auto;
+    height: auto;
+}
+
+.plan button1{
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    background-color: #ECCE77;
+    width: 100%;
+    height: 70%;
+}
+
+.plan button1:hover {
+    background-color: white;
+}
+
+.img2 {
+    width: 500px;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
