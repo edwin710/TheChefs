@@ -382,7 +382,18 @@ h1{
     width: 10em;
     position: absolute;
     bottom: 5%;
-    right: 11%;
+    right: 6%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#addPlan {
+    width: 10em;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
