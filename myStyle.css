@@ -234,14 +234,14 @@ h1{
 }
 
 .container2 {
-    width: 50em;
+    width: 30em;
     height: 30em;
     background-color: bisque;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
-    margin-left: 5em;
-    margin-top: -15em;
+    margin-left: 20em;
+    margin-top: 9em;
     position: relative;
 }
 
@@ -436,8 +436,8 @@ h1{
 #goBack {
     width: 8em;
     position: absolute;
-    top: 95%;
-    left: 5%;
+    top: 90%;
+    left: 10%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -447,8 +447,8 @@ h1{
 #addRecipe {
     width: 8em;
     position: absolute;
-    top: 95%;
-    right: 50%;
+    top: 90%;
+    right: 15%;
     border: 1px solid transparent;
     border-radius: 1em;
     background-color: lightgray;
@@ -458,9 +458,8 @@ h1{
 .newRecipe {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
-    float: left;
-    text-align: left;
-    left: 20%;
+    float: center;
+    text-align: center;
     width: 60%;
     margin-top: -.5em;
 }
