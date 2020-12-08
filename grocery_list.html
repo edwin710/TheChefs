@@ -1,66 +1,132 @@
 <DOCTYPE html>
     <link rel="stylesheet" href="myStyle.css">
     <meta name = "viewport" contents="width=device-width, initialscale-1">
-    <h1>Meal Preppin'</h1>
+   <!-- <h1>Meal Preppin'</h1-->
  
 
 
         <div class="tags">
             <a href="planner.html">Meal Planner</a>
-            <a>Explore</a>
-            <a>Favorites</a>
+            <a href = "explore.html">Explore</a>
+            <a href = "favorites.html">Favorites</a>
             <a href="grocery_list.html">Grocery List</a>
-            <a>Preferences</a>
+            <a href = "preferences.html">Preferences</a>
         </div>
 
-
-        <div class="grocer">
+            <h1>Grocery List</h1>
             <button id="print" onclick="window.print()">Print</button>
-            <ul id ="list"> Grocery List
-                <li>Soy Sauce</li>
-                <li>Shrimp</li>
-                <li>Scallions</li>
-                <li>Ginger</li>
-                <li>Rice</li>
-                <li>Pepper</li>
-                <li>Chicken</li>
-                <li>Olive Oil</li>
-                <li>Garlic</li>
-                <li>Pasta</li>
-                <li>Lemon</li>
-                <li>Parmesan</li>
-                <li>Parsely</li>
-            </ul>
-        </div>
 
-        <div class="addNewGrocer">
-            <button onclick="myFunction()">+</button>
-                <div id="textBox">
-                    <input type="text" id="fitem">
-                    <input type="submit" value="Add New" id = "add">
-                </div>
-        </div>
+            <div class="grocer-container">
+                <ul id ="dairyList">Dairy
+                    <li>Soy Sauce</li>
+                    <li>Shrimp</li>
+                    <div id="textBoxDai">
+                        <input type="text" id="ditem">
+                        <input type="submit" value="Add New" id = "addD">
+                    </div>
+                </ul>
+
+
+                <ul id = "meatsList"> Meats
+                    <li>Scallions</li>
+                    <li>Ginger</li>
+                    <div id="textBoxMeat">
+                        <input type="text" id="mitem">
+                        <input type="submit" value="Add New" id = "addM">
+                    </div>
+                </ul>
+
+
+                <ul id = "fruitList"> Fruits
+                    <li>Rice</li>
+                    <li>Pepper</li>
+                    <div id="textBoxFru">
+                        <input type="text" id="fitem">
+                        <input type="submit" value="Add New" id = "addF">
+                    </div>
+                </ul>
+                
+                <ul id = "vegeList"> Veggies
+                    <li>Chicken</li>
+                    <li>Olive Oil</li>
+                    <div id="textBoxVeg">
+                        <input type="text" id="vitem">
+                        <input type="submit" value="Add New" id = "addV">
+                    </div>
+                </ul>
+
+                <ul id = "bevList"> Beverages
+                    <li>Garlic</li>
+                    <li>Pasta</li>
+                    <div id="textBoxBev">
+                        <input type="text" id="bitem">
+                        <input type="submit" value="Add New" id = "addB">
+                    </div>
+                </ul>
+                
+
+                <ul id = "grainList"> Grains
+                    <li>Lemon</li>
+                    <li>Parmesan</li>
+                    <li>Parsely</li>
+                    <div id="textBoxGrain">
+                        <input type="text" id="gitem">
+                        <input type="submit" value="Add New" id = "addG">
+                    </div>
+                </ul>
+                
+            </div>
+
+            <div class="addNewGrocer">
+                <button onclick="myFunction()">+</button>
+            </div>
+        
 
 
         <script>
-            document.getElementById("add").onclick = function(){
+            document.getElementById("addB").onclick = function(){
                 var node = document.createElement("Li");
-                var text = document.getElementById("fitem").value;
+                var text = document.getElementById("bitem").value;
                 var textnode = document.createTextNode(text);
                 node.appendChild(textnode);
-                document.getElementById("list").appendChild(node);
-                document.getElementById("fitem").value = "";
+                document.getElementById("bevList").appendChild(node);
+                document.getElementById("bitem").value = "";
+            }//function
+
+            document.getElementById("addG").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("gitem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("grainList").appendChild(node);
+                document.getElementById("gitem").value = "";
             }//function
 
             function myFunction() {
-                var x = document.getElementById("textBox");
+                var x = document.getElementById("textBoxGrain");
+                var y = document.getElementById("textBoxBev")
+                var a = document.getElementById("textBoxVeg")
+                var b = document.getElementById("textBoxFru")
+                var c = document.getElementById("textBoxMeat")
+                var d = document.getElementById("textBoxDai")
                 if(x.style.display == "none"){
                     x.style.display = "block";
+                    y.style.display = "block";
+                    a.style.display = "block";
+                    b.style.display = "block";
+                    c.style.display = "block";
+                    d.style.display = "block";
                 }//if
                 else{
                     x.style.display = "none";
+                    y.style.display = "none";
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "none";
                 }//else
             }//myFunction
+
         </script>
 
 </html>

@@ -84,18 +84,20 @@ h1{
 }
 
 /*Grocery List Classes*/
-.grocer{
+.grocer-container{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-.grocer ul{
+.grocer-container ul{
     font-size: 25px;
     margin: 50px;
     text-align: center;
     font-weight: bold;
 }
 
-.grocer li{
+.grocer-container li{
     list-style-type: none;
     padding: 5px;
     text-align: center;
@@ -119,21 +121,36 @@ h1{
     border: solid black;
 }
 
-.addNewGrocer input[type=text]{
+#textBoxGrain input[type=text], #textBoxBev input[type=text], #textBoxVeg input[type=text]{
     border: solid orange 2px;
-    font-size: 20px;
+    font-size: 15px;
+    width: 60px;
 }
 
-.addNewGrocer input[type=submit]{
+#textBoxMeat input[type=text], #textBoxFru input[type=text], #textBoxDai input[type=text]{
+    border: solid orange 2px;
+    font-size: 15px;
+    width: 60px;
+}
+
+#textBoxGrain input[type=submit], #textBoxBev input[type=submit],#textBoxVeg input[type=submit]{
     background-color: orange;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
-#textBox{
-    margin-left: 50%;
+#textBoxMeat input[type=submit], #textBoxFru input[type=submit],#textBoxDai input[type=submit]{
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#textBoxGrain, #textBoxBev,#textBoxVeg, #textBoxMeat,#textBoxFru, #textBoxDai{
+    margin-left: 5px;
     display: none;
 }
 
@@ -145,3 +162,211 @@ h1{
     font-size: 20px;
     cursor: pointer;
 }
+
+/* Favorites page class*/
+
+.container {
+    width: 375px;
+    height: 820px;
+    display: inline-grid;
+    background-color: bisque;
+}
+
+.containerTitle {
+    font-family: "Raleway";
+    font-size: 2.3em;
+    float: right;
+    padding-right: 2.5em;
+    padding-top: .5em;
+}
+
+.card1 {
+    width: 320px;
+    height: 100px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -10em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card1View {
+    width: 320px;
+    height: 300px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -22em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card2 {
+    width: 320px;
+    height: 100px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -10.5em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card2View {
+    width: 320px;
+    height: 300px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -22em;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.card3 {
+    width: 320px;
+    height: 100px;
+    background-color: lightyellow;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+    margin: auto;
+    margin-top: -10.5em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.recipe{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10em;
+}
+
+.filler {
+    font-family: "Raleway";
+    font-size: 1.2em;
+    float: right;
+    text-align: left;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+.recipeTitle {
+    font-family: "Raleway";
+    font-size: 1.2em;
+    float: right;
+    padding-right: .5em;
+    padding-top: .5em;
+}
+
+.recipeDesc {
+    font-family: "Raleway";
+    font-size: 0.8em;
+    float: right;
+    text-align: right;
+    padding-right: .5em;
+    width: 60%;
+    margin-top: -.5em;
+}
+
+.foodPic {
+    width: 7em;
+    height: 7em;
+    position: absolute;  
+}
+
+#view {
+    width: 10em;
+    position: absolute;
+    bottom: 4%;
+    right: 11%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#view:hover {
+    box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
+}
+#new {
+    position: absolute;
+    bottom: 6%;
+    left: 45%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightyellow;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+#f2new {
+    position: absolute;
+    bottom: -15%;
+    left: 45%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightyellow;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#new:hover {
+    box-shadow: 0 8px 16px 0 rgba(20, 20, 20, 0.2);
+}
+
+#cardGoBack {
+    width: 10em;
+    position: absolute;
+    bottom: 5%;
+    right: 11%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#goBack {
+    width: 8em;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+#addRecipe {
+    width: 8em;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-color: lightgray;
+    box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
