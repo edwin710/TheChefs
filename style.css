@@ -41,7 +41,7 @@ a {
 .card1 {
     width: 50em;
     height: 10em;
-    background-color: lightyellow;
+    background-color: bisque;
     border-radius: 1em;
     box-shadow: .2em .2em .2em rgba(68, 68, 68, 0.6);
     margin: auto;
