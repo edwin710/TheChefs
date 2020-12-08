@@ -22,7 +22,7 @@
             <a href = "preferences.html">Preferences</a>
         </div>
 
-            <h1>Grocery List</h1>
+            <h1 id="gHeader">Grocery List</h1>
             <button id="print" onclick="window.print()">Print</button>
 
             <div class="grocer-container">
@@ -120,6 +120,42 @@
                 node.appendChild(textnode);
                 document.getElementById("grainList").appendChild(node);
                 document.getElementById("gitem").value = "";
+            }//function
+
+            document.getElementById("addV").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("vitem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("vegeList").appendChild(node);
+                document.getElementById("vitem").value = "";
+            }//function
+
+            document.getElementById("addF").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("fitem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("fruitList").appendChild(node);
+                document.getElementById("fitem").value = "";
+            }//function
+
+            document.getElementById("addM").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("mitem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("meatsList").appendChild(node);
+                document.getElementById("mitem").value = "";
+            }//function
+
+            document.getElementById("addD").onclick = function(){
+                var node = document.createElement("Li");
+                var text = document.getElementById("ditem").value;
+                var textnode = document.createTextNode(text);
+                node.appendChild(textnode);
+                document.getElementById("dairyList").appendChild(node);
+                document.getElementById("ditem").value = "";
             }//function
 
             function myFunction() {
